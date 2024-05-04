@@ -15,12 +15,11 @@ const subCategoryRoute = require('./routes/subcategory');
 
 // Create the Express app
 const app = express();
-console.log(typeof app); // Should log 'function'
 
 // Database connection
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb+srv://admin:admin@cluster1.ylbuwpb.mongodb.net/bargain-tool");
+    await mongoose.connect("mongodb+srv://mshahbaz6178:cgvEgvzNvOPbM70o@cluster0.aapm6dr.mongodb.net/");
     console.log('Connected to MongoDB.');
   } catch (error) {
     console.error('Error connecting to MongoDB:', error);

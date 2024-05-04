@@ -11,6 +11,10 @@ const Schema = new mongoose.Schema(
             required: true,
         },
         category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
+        subcategory: {
+            type: String,
+            required: true,
+        },
         detail: {
             type: String,
             required: true,
